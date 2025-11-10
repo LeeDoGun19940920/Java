@@ -15,7 +15,7 @@ public class HashMapDicEx {
 		while(true) {
 			System.out.println("찾고 싶은 단어는?");
 			String eng = scan.next(); // String Constant Pool에 저장되는 String Linteral 객체
-			if(eng.equals("exit")) { // Object anObject = "exit";
+			if(eng.equals("exit")) { // Object anObject = "exit"; 서로 다른 객체가 가지고 있는 문자열 값을 비교하는 것이므로
 				System.out.println("종료합니다.");
 				break;
 			}
@@ -27,6 +27,6 @@ public class HashMapDicEx {
 				System.out.println(kor);
 			}
 		}
+		scan.close();
 	}
-
 }
